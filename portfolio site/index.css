@@ -1,0 +1,222 @@
+:root{
+    --bg-pink: #E7B5B5;
+    --button-colour: #ff90b2;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: var(--bg-pink);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid white;
+}
+
+
+/* --------------------------------------- */
+/* ----- Header ----- */
+/* --------------------------------------- */
+
+.header {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.header_text {
+    position: absolute;
+    top: 30%;
+}
+
+.primary_heading{
+    font-size: 80px;
+    padding-left: 3rem;
+    margin-bottom: -1.5rem;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+
+.header_intro {
+    margin: 2rem 0;
+    color: white;
+    font-size: 35px;
+    padding-left: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 70%;
+}
+
+.header_btn {
+    padding-left: 3rem;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid  lightpink;
+    background: var(--button-colour);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+.btn:hover {
+    background-color: pink;
+}
+
+
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 3rem;
+}
+
+.nav_items {
+    display: flex;
+    list-style: none;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.nav_link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--white);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav_link:hover {
+    color: pink;
+}
+
+.nav_link:hover::after {
+    right: 0;
+    height: 2px;
+    background: var(--pink);
+}
+
+/* --------------------------------------- */
+/* ----- About ----- */
+/* --------------------------------------- */
+
+h2 {
+    font-size: 50px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+    color: white;
+    padding-left: 30px;
+}
+
+.about_content {
+    display: flex;
+}
+
+.about_photo_container {
+    margin: 2rem;
+    margin-top: -1rem;
+}
+
+.about_photo {
+    height: 500px;
+    opacity: 80%;
+}
+
+.about_text {
+    color: white;
+    font-family: 'jost', sans-serif;
+    font-size: 30px;
+}
+
+.about_list {
+    padding-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    padding-top: 20px;
+}
+
+.social {
+    height: 50px;
+    padding-right: 10px;
+}
+
+.social:hover {
+    height: 52px;
+}
+
+/* --------------------------------------- */
+/* ----- Projects ----- */
+/* --------------------------------------- */
+
+.creation_photos {
+    display: flex;
+    padding-left: 4rem
+}
+
+.creation_photo {
+    height: 350px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.creation_photo:hover {
+    height: 355px;
+}
+
+/* --------------------------------------- */
+/* ----- Contact ----- */
+/* --------------------------------------- */
+
+.contact_items {
+    display: flex;
+    padding-left: 3rem;
+}
+
+.contact_item {
+    padding-left: 1rem;
+    margin-top: 5px;
+    color: white;
+    font-family: 'jost', sans-serif;
+    font-size: 30px;
+}
+
+#email {
+    margin-bottom: 5rem;
+}
